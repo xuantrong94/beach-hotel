@@ -1,0 +1,14 @@
+.navbar {
+  &__item {
+    margin-left: 39px;
+
+    @include mobile {
+        display: none;
+    }
+    
+    &.active {
+      color: $main-color;
+      border-bottom: 1px solid;
+    }
+  }
+}
