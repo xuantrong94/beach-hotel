@@ -1,6 +1,13 @@
-@import './variables';
-@import './mixins';
-@import './base';
+@import "./variables";
+@import "./base";
 
-@import './components/home';
-@import './components/header';
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/banner";
+@import "./components/title";
+@import "./components/services";
+@import "./components/featuredRoom";
+@import "./components/room";
+@import "./components/singleRoom";
+@import "./components/roomFilter";
+@import "./components/roomList";

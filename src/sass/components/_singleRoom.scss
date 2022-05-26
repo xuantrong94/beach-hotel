@@ -1,0 +1,92 @@
+.single-room {
+  padding: 5rem 0 0 0;
+
+  &__images {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(350px, 1fr)
+    );
+    grid-row-gap: 2rem;
+    grid-column-gap: 50px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__details {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+
+    &__desc,
+    &__info {
+      margin: 1rem 0;
+    }
+
+    &__desc {
+      h3 {
+        text-transform: capitalize;
+        letter-spacing: $main-spacing;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    &__info {
+      h3,
+      h6 {
+        text-transform: capitalize;
+        letter-spacing: $main-spacing;
+      }
+
+      h6 {
+        font-weight: 300;
+      }
+    }
+    &__extras {
+      width: 80vw;
+      margin: 0 auto 3rem auto;
+
+      h6 {
+        text-transform: capitalize;
+        letter-spacing: $main-spacing;
+      }
+
+      &__container {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(330px, 1fr)
+        );
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .single-room__images,
+  .single-room__details,
+  .single-room__extras {
+    width: 95vw;
+    max-width: 1170px;
+  }
+  .single-room__details__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+  .info {
+    padding-left: 3rem;
+  }
+}
